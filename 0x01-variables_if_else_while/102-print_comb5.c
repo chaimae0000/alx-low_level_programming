@@ -1,24 +1,44 @@
 #include <stdio.h>
+#include <unistd.h>
 /**
- * main - program that prints numbers from 0 to 99.
- * Return: 0
+ * main - Entry point
+ * Description: prints all possible combination of 2-digit numbers
+ * Return: Always 0 (success)
  */
-
 int main(void)
 {
-	int c = 0;
+	int c, i, k, j;
 
-	while (c <= 99)
+	for (c = 48; c <= 57; c++)
 	{
-		putchar(c / 10 + '0');
-		putchar(c % 10 + '0');
-		if (c != 99)
+		for (i = 48; i <= 57; i++)
 		{
-                      putchar(',');
-			putchar(' ');
+			for (k = 48; k <= 57; k++)
+			{
+				for (j = 48; j <= 57; j++)
+				{
+				if (((k + j) > (c + i) &&  k >= c) || c < k)
+				{
+					putchar(c);
+					putchar(i);
+					putchar(' ');
+					putchar(k);
+					putchar(j);
+
+					if (c + i + k + j == 227 && c == 57)
+					{
+					break;
+					}
+					else
+					{
+					putchar(',');
+					putchar(' ');
+					}
+				}
+				}
+			}
 		}
-		c++;
 	}
-putchar('\n');
-return (0);
+	putchar('\n');
+	return (0)
 }
