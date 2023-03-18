@@ -10,10 +10,10 @@ char abc;
 
 for (abc = 'a'; abc <= 'z'; abc++)
 {
-putchar(abc);
-}
-for (abc = 'A'; abc <= 'Z'; abc++)
+if (abc == 'q' || abc == 'e')
 {
+abc++;
+}
 putchar(abc);
 }
 putchar('\n');
