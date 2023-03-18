@@ -12,11 +12,11 @@ int main(void)
 	{
 		putchar(c / 10 + '0');
 		putchar(c % 10 + '0');
+		putchar(',');
 		if (c != 99)
 		{
 			putchar(' ');
 		}
-		putchar(',');
 		c++;
 	}
 putchar('\n');
