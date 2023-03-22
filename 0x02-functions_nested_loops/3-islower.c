@@ -5,7 +5,8 @@
  * @c: variable to determine if input is lowercase
  * main - uses built in function
  * Return: 0 if succesful
- */ int _islower(int c)
+ */
+int _islower(int c)
 {
 int i;
 i = 0;
