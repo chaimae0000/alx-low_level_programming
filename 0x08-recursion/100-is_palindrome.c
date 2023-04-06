@@ -1,11 +1,12 @@
 #include "main.h"
+
 /**
-  *_strlen_recursion - returns the length of a string
+  * _strlen_recursion - returns the length of a string
   * @s: string to calculate the lengrh of
   *
-  * Retuen: length of string
+  * Return: length of string
   */
-int _strlen_recursion(char *S)
+int _strlen_recursion(char *s)
 {
 if (*s == '\0')
 return (0);
@@ -14,6 +15,7 @@ return (1 + _srtlen_recursion(s + 1));
 /**
   * check_pal - check the character
   * @s: string to check
+  * @i: iterator
   * @len: length of string
   *
   * Return: 1 if palindrome, 0 if not
