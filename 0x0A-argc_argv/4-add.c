@@ -4,6 +4,7 @@
 #include <ctype.h>
 /**
  * main - adds two positive numbers
+ * atoi is a function that converts a string into an int
  * @argc: number of arguments
  * @argv: contains command line arguments
  * Return: always 0
