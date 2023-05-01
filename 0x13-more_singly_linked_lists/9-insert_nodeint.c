@@ -15,7 +15,7 @@ unsigned int i;
 listint_t *new;
 listint_t *temp = *head;
 new = malloc(sizeof(listint_t));
-f (!new || !head)
+f(!new || !head)
 return (NULL);
 new->n = n;
 new->next = NULL;
